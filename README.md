@@ -19,4 +19,12 @@ Step5 - Connecting hard disk with OSMC installed Raspberrypi.
 
 Step6 - Configure Kore app to listen on configured IP address.
 
-Step6 - Running homeau.py on your computer connected over wifi to push the media file directly into the hard disk using samba server.
+Step7 - Run winscp script - media_push.txt to push any media file to desired location on the hard disk.
+Execute following command in cmd from winscp installation directory:
+winscp.com /script=media_push.txt
+
+Step8 - Automate the script for scheduled file transfer & sync local media directory with remote media directory.
+
+Resources:
+http://winscp.net/eng/docs/scripts
+http://winscp.net/eng/docs/faq_su
