@@ -1,0 +1,21 @@
+# Automatically abort script on errors
+option batch abort
+
+# Disable overwrite confirmations that conflict with the previous
+option confirm off
+
+# Connect to SFTP server using a password
+open sftp://osmc:osmc@192.168.1.102
+
+# command not working
+#sudo su
+
+#cd /home/osmc/sftp/
+cd /media/SFTP
+
+# Upload file
+put d:\testUploadToOSMC.txt 
+
+#/media/SFTP
+# Disconnect
+close
