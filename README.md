@@ -34,14 +34,25 @@ User osmc is not a root user, it does not have root permissions. To write copy a
 For this you need to add permissions in sudoers file located at (/etc/sudoers).
 
 To can make changes to sudoers from putty/bash:
-	Create a back up of this file before editing using -> cp filename{,.bak}
-    Type visudo and press enter.
-    Navigate to the place you wish to edit using the up and down arrow keys.
-    Press insert to go into editing mode.
-    Make your changes - for example: user ALL=(ALL) ALL.
-    Note - it matters whether you use tabs or spaces when making changes.
-    Once your changes are done press esc to exit editing mode.
-    Now type :wq to save and press enter.
-    You should now be back at bash.
-    Now you can press ctrl + D to exit the session if you wish.
 
+	Create a back up of this file before editing using -> cp filename{,.bak}
+    
+	Type visudo and press enter.
+    
+	Navigate to the place you wish to edit using the up and down arrow keys.
+    
+	Press insert to go into editing mode.
+    
+	Make your changes - for example: user ALL=(ALL) ALL.
+    
+	Note - it matters whether you use tabs or spaces when making changes.
+    
+	Once your changes are done press esc to exit editing mode.
+    
+	Now type :wq to save and press enter.
+    
+	You should now be back at bash.
+    
+	Now you can press ctrl + D to exit the session if you wish.
+
+#END
