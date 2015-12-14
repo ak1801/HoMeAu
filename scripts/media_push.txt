@@ -7,15 +7,10 @@ option confirm off
 # Connect to SFTP server using a password
 open sftp://osmc:osmc@192.168.1.102
 
-# command not working
-#sudo su
-
-#cd /home/osmc/sftp/
-cd /media/SFTP
+cd /media/"TV Series"/SFTP
 
 # Upload file
-put d:\testUploadToOSMC.txt 
+put E:\IoT\HoMeAu\scripts\testUploadToOSMC.txt 
 
-#/media/SFTP
 # Disconnect
 close

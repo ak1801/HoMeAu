@@ -26,5 +26,22 @@ winscp.com /script=media_push.txt
 Step8 - Automate the script for scheduled file transfer & sync local media directory with remote media directory.
 
 Resources:
-http://winscp.net/eng/docs/scripts
+http://winscp.net/eng/docs/scripts,
 http://winscp.net/eng/docs/faq_su
+
+#IMPORTANT NOTE:
+User osmc is not a root user, it does not have root permissions. To write copy any media in your hard disk, you need to have root level access.
+For this you need to add permissions in sudoers file located at (/etc/sudoers).
+
+To can make changes to sudoers from putty/bash:
+	Create a back up of this file before editing using -> cp filename{,.bak}
+    Type visudo and press enter.
+    Navigate to the place you wish to edit using the up and down arrow keys.
+    Press insert to go into editing mode.
+    Make your changes - for example: user ALL=(ALL) ALL.
+    Note - it matters whether you use tabs or spaces when making changes.
+    Once your changes are done press esc to exit editing mode.
+    Now type :wq to save and press enter.
+    You should now be back at bash.
+    Now you can press ctrl + D to exit the session if you wish.
+
