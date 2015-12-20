@@ -10,7 +10,8 @@ open sftp://osmc:osmc@192.168.1.102
 cd /media/"TV Series"/SFTP
 
 # Upload file, path given by user
-put %1% 
+# put %1% 
+put D:\IoT\HoMeAu\scripts\testUploadToOSMC.txt
 
 # Disconnect
 close
