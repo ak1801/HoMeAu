@@ -22,7 +22,11 @@ Just follow the steps below and stay excited to create your own media automation
 * Configure Kore app to listen on configured IP address.
 
 ## Uploading Single File to Connected Media from Windows
-* Run winscp script (media_push.txt) to push any media file to desired location on the hard disk. Pass the filepath as parameter while executing the script. Execute following command in cmd from winscp installation directory: winscp.com /script=media_push.txt /parameter // filepath\filename 
+* Open the media_script.txt & edit the SFTP server url, hostkey & Remote Media Path to your custom values.
+ 
+* Run winscp script (media_push.txt) to push any media file to desired location on the hard disk. Pass the filepath as parameter while executing the script.
+
+* Execute following command in cmd from winscp installation directory: winscp.com /script=media_push.txt /parameter //filepath\filename
 (Note. It does not work if filepath has spaces. I am working to fix this. For now, the filepath should not contain any spaces. )
 
 * Alternatively you can run upload.bat file with path to the file which you want to upload. It will automatically call the media_push script and upload the file to location written in the script. e.g. upload.bat c:\\sample.avi
@@ -32,8 +36,11 @@ Just follow the steps below and stay excited to create your own media automation
 * In a similar way you can put the shortcut to the batch file into Explorer’s ‘Send To’ context menu (C:\Users\username\AppData\Roaming\Microsoft\Windows\SendTo in Windows Vista and newer).
 
 ## Automate the script for sync-ing local media directory with remote media directory.
-* Open Homeau (sync).bat file in notepad and edit the local directory path & remote directory path.
-* Run the Homeau (sync).bat file to sync the local & remote directories.
+* Open Homeau (sync).bat file in notepad and edit the local media path & remote media path (add your custom values).
+
+* Open media_sync.txt & edit the SFTP url & hostkey to your custom values
+
+* Run the Homeau (sync).bat file to sync the local & remote directories. (this will be one way synchronization, from local to remote)
 
 ## Scheduling file transfers
 Work in progress..
