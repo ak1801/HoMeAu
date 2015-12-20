@@ -1,0 +1,1 @@
+winscp.com /script=media_sync.txt /parameter // "D:\media\Movies\SFTP" "/media/Movies/SFTP"
