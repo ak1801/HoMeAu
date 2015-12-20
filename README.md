@@ -31,7 +31,12 @@ Just follow the steps below and stay excited to create your own media automation
 
 * In a similar way you can put the shortcut to the batch file into Explorer’s ‘Send To’ context menu (C:\Users\username\AppData\Roaming\Microsoft\Windows\SendTo in Windows Vista and newer).
 
-## Automate the script for scheduled file transfer & sync local media directory with remote media directory.
+## Automate the script for sync-ing local media directory with remote media directory.
+* Open Homeau (sync).bat file in notepad and edit the local directory path & remote directory path.
+* Run the Homeau (sync).bat file to sync the local & remote directories.
+
+## Scheduling file transfers
+Work in progress..
 
 ### Resources:
 * http://winscp.net/eng/docs/scripts,
