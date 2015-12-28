@@ -1,8 +1,0 @@
-#Sych the media in local folder to remote folder
-
-# Being intended for interactive session, we are not enabling batch mode
-# Connect
-open sftp://osmc:osmc@192.168.1.102 -hostkey="ssh-rsa 2048 c9:b6:72:52:d1:0f:6a:fe:05:ab:26:2e:02:48:14:e4"
-
-# Synchronize paths provided via environment variables
-synchronize remote "%1%" "%2%"
